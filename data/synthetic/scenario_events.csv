@@ -1,0 +1,7 @@
+event_id,scenario_id,name,start_day,end_day,cluster_id,demand_multiplier,description
+EV1,DEMO_FESTIVAL,Demo festival sale,4,10,NCR,2.2,Higher demand; evaluate flex node activation in advance
+EV2,DEMO_FESTIVAL,Post-sale quiet period,11,14,NCR,0.6,Low demand; evaluate consolidation after cooldown
+EV3,DEMO_FESTIVAL,Demo festival sale,4,10,MUM,2.2,Higher demand; evaluate flex node activation in advance
+EV4,DEMO_FESTIVAL,Post-sale quiet period,11,14,MUM,0.6,Low demand; evaluate consolidation after cooldown
+EV5,DEMO_FESTIVAL,Demo festival sale,4,10,BLR,2.2,Higher demand; evaluate flex node activation in advance
+EV6,DEMO_FESTIVAL,Post-sale quiet period,11,14,BLR,0.6,Low demand; evaluate consolidation after cooldown

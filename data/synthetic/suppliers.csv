@@ -1,0 +1,4 @@
+supplier_id,name,city,cluster_id,latitude,longitude,production_capacity_units_per_day,lead_time_days,reliability_score
+S01,Aravali Demo Supply,Manesar,NCR,28.36,76.94,600,1,0.96
+S02,Konkan Demo Supply,Bhiwandi,MUM,19.3,73.06,600,1,0.95
+S03,Deccan Demo Supply,Hosur,BLR,12.74,77.83,600,1,0.97

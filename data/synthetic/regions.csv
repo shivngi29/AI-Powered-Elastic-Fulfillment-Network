@@ -1,0 +1,7 @@
+region_id,name,city,state,cluster_id,latitude,longitude,m5_store_id,m5_state_id,baseline_units_per_day,sla_minutes
+R01,Delhi South,Delhi,Delhi,NCR,28.53,77.22,CA_1,CA,100,180
+R02,Gurugram Central,Gurugram,Haryana,NCR,28.46,77.03,CA_2,CA,100,180
+R03,Thane Central,Thane,Maharashtra,MUM,19.22,72.98,TX_1,TX,100,180
+R04,Navi Mumbai,Navi Mumbai,Maharashtra,MUM,19.04,73.03,TX_2,TX,100,180
+R05,Whitefield,Bengaluru,Karnataka,BLR,12.97,77.75,WI_1,WI,100,180
+R06,Electronic City,Bengaluru,Karnataka,BLR,12.84,77.66,WI_2,WI,100,180

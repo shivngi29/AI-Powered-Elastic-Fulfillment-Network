@@ -1,0 +1,7 @@
+node_id,name,type,status,city,cluster_id,latitude,longitude,storage_capacity_units,processing_capacity_units_per_hour,operating_hours_per_day,operating_cost_inr_per_day,standby_cost_inr_per_day,activation_cost_inr,activation_time_hours,max_delivery_radius_km,is_elastic
+N01,NCR Main FC,WAREHOUSE,ACTIVE,Gurugram,NCR,28.49,77.04,4000,40,8,1800,0,0,0,45,false
+N02,NCR Flex FC,MICRO_FC,STANDBY,Delhi,NCR,28.52,77.13,2000,40,8,1300,150,1500,4,45,true
+N03,Mumbai Main FC,WAREHOUSE,ACTIVE,Thane,MUM,19.2,73,4000,40,8,2000,0,0,0,45,false
+N04,Mumbai Flex FC,MICRO_FC,STANDBY,Navi Mumbai,MUM,19.1,73.02,2000,40,8,1500,150,1500,4,45,true
+N05,Bengaluru Main FC,WAREHOUSE,ACTIVE,Bengaluru,BLR,12.95,77.67,4000,40,8,1800,0,0,0,45,false
+N06,Bengaluru Flex FC,MICRO_FC,STANDBY,Bengaluru,BLR,12.9,77.7,2000,40,8,1300,150,1500,4,45,true

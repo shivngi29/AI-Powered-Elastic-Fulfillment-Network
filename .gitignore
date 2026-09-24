@@ -1,0 +1,63 @@
+# Python virtual environments
+.venv/
+.venv312/
+venv/
+
+# Python bytecode, notebook checkpoints, and tool caches
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Node/React dependencies, generated builds, and local caches
+node_modules/
+dist/
+build/
+.vite/
+.npm/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment values; keep sanitized example files trackable
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local IDE state (shared VS Code configuration remains trackable)
+.vscode/*.local.json
+.vscode/.ropeproject/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+*.suo
+*.user
+
+# Windows and macOS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+._*
+
+# Re-downloadable M5 source CSVs only; keep synthetic data and docs
+/data/raw/M5/calendar.csv
+/data/raw/M5/sales_train_evaluation.csv
+/data/raw/M5/sales_train_validation.csv
+/data/raw/M5/sample_submission.csv
+/data/raw/M5/sell_prices.csv
+
+# No blanket exclusions for notebooks, model weights, or generated data:
+# add specific artifact/cache paths when they are introduced and reviewed.

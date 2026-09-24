@@ -1,0 +1,2 @@
+config_id,snapshot_date,simulation_days,forecast_horizon_days,baseline_window_days,target_utilization,scale_in_utilization,scale_in_consecutive_days,minimum_active_days,unserved_penalty_inr_per_unit,normalization_mode,scenario_id
+MVP,2026-09-19,14,3,28,0.8,0.35,3,3,100,REGION_TOTAL,DEMO_FESTIVAL
