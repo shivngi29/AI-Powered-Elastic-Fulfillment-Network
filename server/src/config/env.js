@@ -6,6 +6,7 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 
 export const config = {
   port,
+  mongodbUri: process.env.MONGODB_URI?.trim(),
   corsOrigins: (
     process.env.CORS_ORIGINS ??
     'http://localhost:5173,http://127.0.0.1:5173'
