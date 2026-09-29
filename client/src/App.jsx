@@ -4,6 +4,7 @@ import PlaceholderPage from './components/PlaceholderPage.jsx';
 import { pages } from './pages.js';
 import NodesPage from './components/NodesPage.jsx';
 import InventoryPage from './components/InventoryPage.jsx';
+import ForecastPage from './components/ForecastPage.jsx';
 
 function getPageId() {
   const hash = window.location.hash;
@@ -23,6 +24,6 @@ export default function App() {
 
   return <Layout pages={pages} currentPage={page}>{page ? (
     page.id === 'dashboard' || page.id === 'network' ? <NodesPage page={page} />
-      : page.id === 'inventory' ? <InventoryPage /> : <PlaceholderPage page={page} />
+      : page.id === 'inventory' ? <InventoryPage /> : page.id === 'demand-forecast' ? <ForecastPage /> : <PlaceholderPage page={page} />
   ) : <section className="page-heading"><h1>Page not found</h1><p>Choose a workspace from the navigation.</p><a href="#/dashboard">Return to Dashboard</a></section>}</Layout>;
 }

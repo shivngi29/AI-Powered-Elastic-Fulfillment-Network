@@ -1,4 +1,10 @@
 :root { font-family: Inter, 'Segoe UI', sans-serif; color: #20383f; background: #f4f7f8; font-synthesis: none; text-rendering: optimizeLegibility; }
+.forecast-notice { margin: 24px 24px 0; padding: 16px; background: #fff5df; border: 1px solid #ecdaad; border-radius: 7px; color: #75531c; font-size: 12px; }
+.forecast-notice p { margin: 8px 0 0; line-height: 1.6; }
+.forecast-chart { margin: 20px 24px 24px; overflow-x: auto; }
+.forecast-chart svg { display: block; width: 100%; min-width: 540px; }
+.forecast-chart text { fill: #536b74; font: 12px 'Segoe UI', sans-serif; }
+.forecast-chart figcaption { font-size: 12px; color: #647780; line-height: 1.7; margin-top: 12px; }
 button, input { font: inherit; }
 button { padding: 9px 14px; border: 1px solid #a9c4be; border-radius: 6px; background: #edf5f2; color: #23564b; cursor: pointer; font-size: 12px; }
 button:hover { background: #dceee7; } button:disabled { opacity: .6; cursor: wait; }
