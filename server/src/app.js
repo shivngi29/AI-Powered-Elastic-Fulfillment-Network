@@ -5,6 +5,7 @@ import healthRoutes from './routes/healthRoutes.js';
 import nodeRoutes from './routes/nodeRoutes.js';
 import inventoryRoutes from './routes/inventoryRoutes.js';
 import forecastRoutes from './routes/forecastRoutes.js';
+import scalingEventRoutes from './routes/scalingEventRoutes.js';
 import { notFound } from './middleware/notFound.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
@@ -16,6 +17,7 @@ app.use('/api', healthRoutes);
 app.use('/api/nodes', nodeRoutes);
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/forecasts', forecastRoutes);
+app.use('/api/scaling', scalingEventRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
