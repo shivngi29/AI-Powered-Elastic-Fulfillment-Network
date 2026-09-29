@@ -26,7 +26,7 @@ export default function Layout({ pages, currentPage, children }) {
           <span className="environment-label">Development workspace</span>
         </header>
         <main id="main-content" tabIndex={-1} key={currentPage?.id ?? 'not-found'}>{children}</main>
-        <footer className="footer"><span>Elastic Fulfillment · Frontend foundation</span><span>{API_BASE_URL ? 'API URL configured · connection not checked' : 'API URL not configured'}</span></footer>
+        <footer className="footer"><span>Elastic Fulfillment · Operations workspace</span><span>{API_BASE_URL ? 'Data refreshes on page load or Refresh' : 'API URL not configured'}</span></footer>
       </div>
     </div>
   );

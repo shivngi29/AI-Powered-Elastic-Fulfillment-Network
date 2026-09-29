@@ -1,4 +1,19 @@
 :root { font-family: Inter, 'Segoe UI', sans-serif; color: #20383f; background: #f4f7f8; font-synthesis: none; text-rendering: optimizeLegibility; }
+button, input { font: inherit; }
+button { padding: 9px 14px; border: 1px solid #a9c4be; border-radius: 6px; background: #edf5f2; color: #23564b; cursor: pointer; font-size: 12px; }
+button:hover { background: #dceee7; } button:disabled { opacity: .6; cursor: wait; }
+button:focus-visible, input:focus-visible, .table-scroll:focus-visible { outline: 3px solid #50b8aa; outline-offset: 3px; }
+.summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
+.summary-card { padding: 22px; background: white; border: 1px solid #dfe7ea; border-radius: 9px; }
+.summary-card > span { font-size: 12px; }.summary-card strong { display: block; margin-top: 17px; font-size: 32px; font-weight: 600; }
+.node-status { display: inline-block; padding: 5px 8px; font-size: 10px; font-weight: 650; border-radius: 4px; background: #eff2f3; color: #4e626b; white-space: nowrap; }
+.node-status.active { background: #e2f3e9; color: #216943; }.node-status.standby { background: #fff1d2; color: #815800; }.node-status.inactive { background: #eceff2; color: #536171; }
+.table-scroll { overflow-x: auto; }table { border-collapse: collapse; width: 100%; font-size: 12px; text-align: left; }
+th { padding: 16px 20px; font-size: 11px; color: #5d727a; background: #f8fafb; font-weight: 600; }td { padding: 18px 20px; border-top: 1px solid #e7edef; }td strong { font-weight: 600; }.cell-detail { display: block; color: #71838b; font-size: 11px; margin-top: 5px; }
+.data-state { padding: 50px 24px; text-align: center; color: #5e747d; }.data-state h2 { font-size: 18px; }.data-state p { font-size: 13px; line-height: 1.7; }.api-error { color: #854237; background: #fff8f5; }
+.inventory-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-bottom: 22px; }.inventory-filters label { display: grid; gap: 7px; font-size: 12px; color: #526b74; }.inventory-filters input { padding: 9px 12px; width: 180px; max-width: 100%; border: 1px solid #ccdadd; border-radius: 6px; background: white; color: #20383f; }
+.table-note { font-size: 12px; color: #667b83; line-height: 1.7; }
+@media (max-width: 850px) { .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.summary-card { padding: 16px; } }
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; }
 a { color: inherit; }

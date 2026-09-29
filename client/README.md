@@ -1,7 +1,9 @@
 # Elastic Fulfillment frontend
 
-React/Vite operations workspace with six placeholder screens. No live data,
-forecasting, maps, authentication, or operational actions are implemented.
+React/Vite operations workspace. Dashboard and Network load fulfillment nodes
+from GET /api/nodes. Inventory loads GET /api/inventory with optional nodeId and
+productId filters. Other screens remain placeholders. No forecasting, maps,
+authentication, or operational write actions are implemented.
 
 Use Node.js 22.12+ (Node.js 24 recommended) and npm. From `client/`:
 
@@ -17,8 +19,13 @@ never store secrets in it. Restart Vite after changing environment values.
 
 Navigation uses hash URLs such as `/#/inventory`, supporting direct links and
 browser back/forward without a routing dependency. Unknown screens show a
-not-found message. API configuration is available in `src/config/api.js`, but
-this shell intentionally makes no backend requests and claims no connection status.
+not-found message. API configuration is available in `src/config/api.js`.
+Start the existing backend and MongoDB before opening the data screens. The
+default example API base is http://localhost:5000/api. Screens support loading,
+empty results, retryable errors, and manual refresh. Product IDs are displayed
+because there is no product-list API. Counts are derived from node records, not
+forecasts or utilization estimates. Development seed records are synthetic data
+served by the real database; the frontend adds no fabricated records.
 
 ```powershell
 npm.cmd run build

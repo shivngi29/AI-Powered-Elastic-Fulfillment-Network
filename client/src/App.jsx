@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import Layout from './components/Layout.jsx';
 import PlaceholderPage from './components/PlaceholderPage.jsx';
 import { pages } from './pages.js';
+import NodesPage from './components/NodesPage.jsx';
+import InventoryPage from './components/InventoryPage.jsx';
 
 function getPageId() {
   const hash = window.location.hash;
@@ -19,5 +21,8 @@ export default function App() {
   const page = pages.find((item) => item.id === pageId);
   useEffect(() => { document.title = `${page?.label ?? 'Page not found'} | Elastic Fulfillment`; }, [page]);
 
-  return <Layout pages={pages} currentPage={page}>{page ? <PlaceholderPage page={page} /> : <section className="page-heading"><h1>Page not found</h1><p>Choose a workspace from the navigation.</p><a href="#/dashboard">Return to Dashboard</a></section>}</Layout>;
+  return <Layout pages={pages} currentPage={page}>{page ? (
+    page.id === 'dashboard' || page.id === 'network' ? <NodesPage page={page} />
+      : page.id === 'inventory' ? <InventoryPage /> : <PlaceholderPage page={page} />
+  ) : <section className="page-heading"><h1>Page not found</h1><p>Choose a workspace from the navigation.</p><a href="#/dashboard">Return to Dashboard</a></section>}</Layout>;
 }
