@@ -1,0 +1,8 @@
+export const pages = [
+  { id: 'dashboard', label: 'Dashboard', short: 'Overview', description: 'A central workspace for your fulfillment operations.', scope: 'Operational overview', detail: 'This area will bring together fulfillment nodes, inventory, and operational activity after the relevant data is connected.' },
+  { id: 'demand-forecast', label: 'Demand Forecast', short: 'Demand', description: 'A workspace for reviewing future demand.', scope: 'Forecast review', detail: 'Forecast views will be added after the existing Python intelligence layer is ready for integration.' },
+  { id: 'network', label: 'Network', short: 'Network', description: 'Explore the structure of your fulfillment network.', scope: 'Node visibility', detail: 'A future view will show fulfillment node locations, capacities, and statuses. Network visualization is not implemented yet.' },
+  { id: 'inventory', label: 'Inventory', short: 'Inventory', description: 'Understand stock across products and fulfillment nodes.', scope: 'Stock visibility', detail: 'Inventory tables and filters will be connected to the backend in a later chunk. No stock records are displayed here yet.' },
+  { id: 'scaling-events', label: 'Scaling Events', short: 'Scaling', description: 'A workspace for reviewing network capacity changes.', scope: 'Capacity activity', detail: 'Scaling decisions and event history will appear after the corresponding backend and intelligence integration are implemented.' },
+  { id: 'routing', label: 'Routing', short: 'Routing', description: 'A workspace for future delivery route planning.', scope: 'Route planning', detail: 'Routing is being developed separately. This screen does not calculate routes or suggest delivery assignments.' },
+];
