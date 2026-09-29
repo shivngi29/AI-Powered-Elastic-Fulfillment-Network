@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "node --watch --env-file-if-exists=.env src/index.js",
     "start": "node --env-file-if-exists=.env src/index.js",
-    "test": "node --test"
+    "test": "node --test",
+    "seed:dev": "node --env-file-if-exists=.env scripts/seedDev.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
